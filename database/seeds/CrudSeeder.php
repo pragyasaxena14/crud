@@ -16,5 +16,10 @@ class CrudSeeder extends Seeder
             'title' => str_random(20),
             'post' => str_random(100),        
         ]);
+        for($i=0;$i<10;$i++)
+        DB::table('cruds')->insert([
+            'title' => str_random(20),
+            'post' => str_random(100),        
+        ]);
     }
 }
